@@ -8,7 +8,11 @@
 :root {
   --primary-bg: #121212;
   --accent-color: #9e0b2b;
-  --accent-dark: #e81652;
+  --accent-dark: #9c012d;
+}
+
+html {
+  font-size: 87.5%; /* ~16px -> 14px, scales all Tailwind rem-based text sizes down */
 }
 
 body {

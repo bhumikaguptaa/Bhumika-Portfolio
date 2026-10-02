@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export function ProjectItem({
   title,
   link,
@@ -7,7 +9,7 @@ export function ProjectItem({
 }: {
   title: string;
   link?: string;
-  desc: string;
+  desc: ReactNode;
   tag: string;
   win?: string;
 }) {
@@ -27,7 +29,7 @@ export function ProjectItem({
         <span className="text-xl font-semibold text-neutral-100 group-hover:text-rose-500 transition-colors">
           {title}
         </span>
-        <span className="text-xs font-mono text-neutral-500 border border-neutral-800 px-2 py-0.5 rounded bg-neutral-900/50">
+        <span className="text-xs font-mono font-semibold text-rose-300 border border-rose-900/60 px-2.5 py-1 rounded bg-rose-950/40">
           {tag}
         </span>
       </a>
@@ -35,7 +37,7 @@ export function ProjectItem({
       <p className="text-neutral-400 leading-relaxed">{desc}</p>
 
       {win && (
-        <span className="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-neutral-900 border border-neutral-800 rounded text-xs text-rose-400">
+        <span className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-rose-950/40 border border-rose-800/60 rounded-full text-xs font-semibold text-rose-300">
           🏆 {win}
         </span>
       )}
