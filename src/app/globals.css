@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jetbrains-mono);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+:root {
+  --primary-bg: #121212;
+  --accent-color: #9e0b2b;
+  --accent-dark: #e81652;
+}
+
+body {
+  background: var(--primary-bg);
+  color: #e0e0e0;
+  margin: 0;
+}
+
+a:hover,
+button {
+  cursor: none;
+}
+
+@media (hover: none) {
+  a:hover,
+  button {
+    cursor: pointer;
+  }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
