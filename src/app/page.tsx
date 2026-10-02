@@ -111,7 +111,7 @@ export default function Home() {
                 href={`mailto:${"guptabhumika220605@gmail.com"}`}
                 className="hover:text-rose-500 transition-colors cursor-none"
               >
-                email me
+                Email Me
               </Link>
               <span>•</span>
               <Link
@@ -119,13 +119,12 @@ export default function Home() {
                 target="_blank"
                 className="hover:text-rose-500 transition-colors cursor-none"
               >
-                resume
+                Resume
               </Link>
             </div>
             <p className="max-w-2xl text-lg leading-relaxed text-neutral-400 mt-8">
-              I&apos;m a Business Analytics & Mathematics student at the University of Kansas,
-              currently forward deployed at Merble building integrations and ML-driven pipelines
-              in NYC. I like building things at the intersection of data, blockchain, and
+              I&apos;m a Business Analytics & Mathematics student at the University of Kansas. 
+              I like building things at the intersection of data, blockchain, and 
               real-world impact — from humanitarian payment rails to AI intent-detection systems.
             </p>
           </div>
